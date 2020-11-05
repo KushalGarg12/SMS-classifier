@@ -6,11 +6,11 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.externals import joblib
 
 
-
-
-app = Flask(__name__)
 model=pickle.load(open('model.pkl','rb'))
 cv=pickle.load(open('transform.pkl','rb'))
+
+app = Flask(__name__)
+
 
 
 #cv = CountVectorizer()
